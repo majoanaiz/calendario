@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nidolab - Agendamiento y Calificaciones</title>
+    <style>
+        /* Estilos básicos para hacer el mockup legible */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #333;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        .calendar-section {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 6px;
+        }
+        .worker-card {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 6px;
+            background-color: #f9f9f9;
+        }
+        .rating {
+            color: gold;
+            font-size: 1.2em;
+        }
+        .rating-num {
+            font-weight: bold;
+            color: #555;
+        }
+        .btn-success {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>🗓️ Plataforma de Agendamiento Nidolab</h1>
+        <p>Bienvenido(a) al servicio personalizado de Nidolab. Aquí puedes determinar el día y hora en que necesitas el cuidado de tus hijos[cite: 14].</p>
+
+        <div class="calendar-section">
+            <h2>Paso 1: Seleccionar Servicio y Disponibilidad</h2>
+            <p><strong>[SIMULACIÓN DE CALENDARIO]</strong></p>
+            <p>Se muestra un calendario con la disponibilidad de Nidolab. El usuario selecciona la fecha y hora.</p>
+            
+            <label for="fecha">Selecciona el Día:</label>
+            <input type="date" id="fecha" name="fecha" value="2025-11-15">
+            
+            <label for="hora">Selecciona la Hora (Inicio):</label>
+            <select id="hora" name="hora">
+                <option value="9am">09:00 AM</option>
+                <option value="10am">10:00 AM</option>
+                <option value="11am">11:00 AM (AGENDADO)</option>
+                <option value="12pm" selected>12:00 PM</option>
+            </select>
+            
+            <label for="duracion">Duración (horas):</label>
+            <input type="number" id="duracion" name="duracion" min="1" max="8" value="3">
+            
+            <button class="btn-success" style="margin-left: 10px;">Confirmar Solicitud</button>
+        </div>
+
+        <hr>
+
+        <h2>⭐ Nuestros Trabajadores y Calificaciones</h2>
+        <p>Conoce las opiniones y calificaciones de nuestros profesionales para prestarte un mejor servicio[cite: 15].</p>
+
+        <div class="worker-card">
+            <h3>Trabajadora: María P.</h3>
+            <p>Opiniones: "Excelente con mi hijo", "Muy atenta y profesional."</p>
+            <p>Calificación Promedio: <span class="rating">★★★★★</span> <span class="rating-num">4.9/5</span></p>
+        </div>
+
+        <div class="worker-card">
+            <h3>Trabajador: Andrés L.</h3>
+            <p>Opiniones: "Muy lúdico y activo.", "Totalmente recomendable."</p>
+            <p>Calificación Promedio: <span class="rating">★★★★☆</span> <span class="rating-num">4.5/5</span></p>
+        </div>
+
+        <hr>
+
+        <div style="text-align: center; padding-top: 20px;">
+            <h2>✅ Encuesta de Satisfacción</h2>
+            <p>Luego de utilizar la plataforma y el servicio, le invitamos a responder nuestra encuesta para medir su satisfacción[cite: 16].</p>
+            
+            <a href="URL_DE_LA_ENCUESTA_REAL" class="btn-success">Responder Encuesta de Satisfacción</a>
+            <p style="margin-top: 10px; font-size: 0.9em; color: #777;">(Este paso valida si percibe un beneficio adicional con el servicio prestado [cite: 20]).</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
