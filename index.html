@@ -5,37 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nidolab - Agendamiento y Calificaciones</title>
     <style>
-        /* Estilos básicos para hacer el mockup legible */
+        /* Estilos actualizados para un look profesional en azul y blanco */
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+            /* Fondo azul muy claro */
+            background-color: #f0f8ff; 
         }
         .container {
             max-width: 900px;
-            margin: auto;
+            margin: 40px auto;
             background: white;
             padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 12px;
+            /* Sombra sutil y profesional */
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08); 
         }
         h1, h2 {
-            color: #333;
-            border-bottom: 2px solid #eee;
+            color: #1e3a8a; /* Azul oscuro para títulos */
+            border-bottom: 2px solid #add8e6; /* Línea separadora azul claro */
             padding-bottom: 10px;
+            margin-top: 0;
         }
         .calendar-section {
-            border: 1px solid #ccc;
+            border: 1px solid #b0e0e6; /* Borde azul pálido */
             padding: 20px;
-            margin-bottom: 25px;
-            border-radius: 6px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            background-color: #faffff; /* Fondo ligeramente fuera de blanco */
+        }
+        label {
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
+            margin-right: 15px;
+            color: #333;
+        }
+        input[type="date"], select, input[type="number"] {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
         }
         .worker-card {
-            border: 1px solid #ddd;
+            border: 1px solid #e0f0ff; /* Borde muy sutil */
             padding: 15px;
             margin-bottom: 15px;
-            border-radius: 6px;
-            background-color: #f9f9f9;
+            border-radius: 8px;
+            background-color: #f9fbfc; /* Fondo limpio */
         }
         .rating {
             color: gold;
@@ -43,18 +60,29 @@
         }
         .rating-num {
             font-weight: bold;
-            color: #555;
+            color: #4682b4; /* Número de calificación en tono azul */
         }
         .btn-success {
-            background-color: #28a745;
+            background-color: #4682b4; /* Azul profesional para el botón */
             color: white;
-            padding: 10px 20px;
+            padding: 12px 25px;
             border: none;
-            border-radius: 5px;
+            border-radius: 6px;
             cursor: pointer;
             text-decoration: none;
             display: inline-block;
-            margin-top: 20px;
+            margin-top: 25px;
+            font-size: 1.1em;
+            transition: background-color 0.3s;
+        }
+        .btn-success:hover {
+            background-color: #36658f;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #e0e0e0;
+            margin: 30px 0;
         }
     </style>
 </head>
@@ -62,7 +90,7 @@
 
     <div class="container">
         <h1>🗓️ Plataforma de Agendamiento Nidolab</h1>
-        <p>Bienvenido(a) al servicio personalizado de Nidolab. Aquí puedes determinar el día y hora en que necesitas el cuidado de tus hijos[cite: 14].</p>
+        <p>Bienvenido(a) al servicio personalizado de Nidolab. [cite_start]Aquí puedes determinar el día y hora en que necesitas el cuidado de tus hijos[cite: 14].</p>
 
         <div class="calendar-section">
             <h2>Paso 1: Seleccionar Servicio y Disponibilidad</h2>
@@ -89,7 +117,7 @@
         <hr>
 
         <h2>⭐ Nuestros Trabajadores y Calificaciones</h2>
-        <p>Conoce las opiniones y calificaciones de nuestros profesionales para prestarte un mejor servicio[cite: 15].</p>
+        [cite_start]<p>Conoce las opiniones y calificaciones de nuestros profesionales para prestarte un mejor servicio[cite: 15].</p>
 
         <div class="worker-card">
             <h3>Trabajadora: María P.</h3>
@@ -107,10 +135,10 @@
 
         <div style="text-align: center; padding-top: 20px;">
             <h2>✅ Encuesta de Satisfacción</h2>
-            <p>Luego de utilizar la plataforma y el servicio, le invitamos a responder nuestra encuesta para medir su satisfacción[cite: 16].</p>
+            [cite_start]<p>Luego de utilizar la plataforma y el servicio, le invitamos a responder nuestra encuesta para medir su satisfacción[cite: 16].</p>
             
-            <a href="URL_DE_LA_ENCUESTA_REAL" class="btn-success">Responder Encuesta de Satisfacción</a>
-            <p style="margin-top: 10px; font-size: 0.9em; color: #777;">(Este paso valida si percibe un beneficio adicional con el servicio prestado [cite: 20]).</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe0DKX699_if43VeH6dQH0wHQrAsuhcu-3Gh3mVuGSQBk_JmA/viewform?usp=dialog" class="btn-success">Responder Encuesta de Satisfacción</a>
+            [cite_start]<p style="margin-top: 15px; font-size: 0.9em; color: #777;">(Este paso valida si percibe un beneficio adicional con el servicio prestado [cite: 20]).</p>
         </div>
 
     </div>
